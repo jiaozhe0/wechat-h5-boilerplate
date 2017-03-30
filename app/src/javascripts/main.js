@@ -63,6 +63,10 @@
         });
 
         // hide loading animation since everything is ready
-        $('.loading-overlay').slideUp();
+        setTimeout(function(){
+            $('.loading-overlay').slideUp();
+
+        },0)
+
     });
 })();

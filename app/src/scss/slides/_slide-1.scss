@@ -1,17 +1,24 @@
 .slide-1 {
+
     background-color: #e88a63;
-    .item-image {
-        width: 18rem;
-        height: 18rem;
+    background-color: #fff;
+    .left-hand,.item-image {
+        width: 12rem;
+        height: 12rem;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 4rem;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-image: url('../images/github-1.png');
+        top: 15rem;
+        right: -0.4rem;
+        background-image: url('../images/right.png');
+        transform: translateZ(-100px)
+    }
+    .left-hand{
+      width: 14rem;
+      height: 14rem;
+      left:-1.2rem;
+      background-image: url('../images/left.png');
     }
     .item-text {
         width: 18rem;
@@ -25,4 +32,13 @@
         margin: 0 auto;
         text-align: center;
     }
+}
+
+@keyframes rotate-left {
+   0%{
+       transform: rotateZ(0);
+   }
+   100%{
+     transform: rotate(-25deg);
+   }
 }
